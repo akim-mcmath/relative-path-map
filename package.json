@@ -1,6 +1,6 @@
 {
   "name": "relative-path-map",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Configure a map of paths that may refer to each other",
   "author": "Akim McMath <akim.elijah.mcmath@gmail.com>",
   "license": "MIT",
