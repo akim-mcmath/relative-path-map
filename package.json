@@ -1,0 +1,55 @@
+{
+  "name": "relative-path-map",
+  "version": "0.0.0",
+  "description": "Configure a map of paths that may refer to each other",
+  "author": "Akim McMath <akim.elijah.mcmath@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "path",
+    "paths",
+    "relative",
+    "map",
+    "object",
+    "config",
+    "template",
+    "directory"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE.txt"
+  ],
+  "scripts": {
+    "test": "npm run jshint && npm run jscs && npm run mocha",
+    "jshint": "jshint . --exclude-path .gitignore",
+    "jscs": "jscs .",
+    "mocha": "istanbul cover _mocha",
+    "coverage": "npm test && open ./coverage/lcov-report/index.html",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "clean": "rm -rf ./node_modules ./coverage",
+    "preversion": "npm run test"
+  },
+  "engines": {
+    "node": ">=0.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akim-mcmath/relative-path-map.git"
+  },
+  "bugs": {
+    "url": "https://github.com/akim-mcmath/relative-path-map/issues"
+  },
+  "homepage": "https://github.com/akim-mcmath/relative-path-map#readme",
+  "dependencies": {
+    "lodash": "^4.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.8",
+    "istanbul": "^0.4.2",
+    "jscs": "^2.11.0",
+    "jshint": "^2.9.1",
+    "mocha": "^2.4.5"
+  }
+}
